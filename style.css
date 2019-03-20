@@ -11,19 +11,21 @@ section
 video
 {
     object-fit: cover;
+    top: 20%;
+    transform: translateY(-15%)
 }
 h1
 {
     margin: 0;
     padding: 0;
     position: absolute;
-    top:50%;
+    top:35%;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
     color: #ddd;
     font-size: 5em;
-    font-family: sans-serif;
+    font-family: 'Yellowtail', cursive;
     letter-spacing: 0.02em;
 }
 h1 span
@@ -49,7 +51,7 @@ h1 span
 }
 h1 span:nth-child(1)
 {
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 h1 span:nth-child(2)
 {
@@ -57,21 +59,21 @@ h1 span:nth-child(2)
 }
 h1 span:nth-child(3)
 {
-    animation-delay: 2.5s;
+    animation-delay: 2.25s;
 }
 h1 span:nth-child(4)
 {
-    animation-delay: 3s;
+    animation-delay: 2.5s;
 }
 h1 span:nth-child(5)
 {
-    animation-delay: 3.5s;
+    animation-delay: 2.75s;
 }
 h1 span:nth-child(6)
 {
-    animation-delay: 3.75s;
+    animation-delay: 3s;
 }
 h1 span:nth-child(7)
 {
-    animation-delay: 4s;
+    animation-delay: 3.25s;
 }
