@@ -172,3 +172,76 @@ header
 
 /* BUTTONS ABOUT ME
 =========================================================== */
+.container
+{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 0;
+}
+.container .box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* width: calc(400px - 30px);
+    height: calc(400px - 30px); */
+    background: midnightblue;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container .box .corgi
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .box:hover .corgi
+{
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container .box .corgi img
+{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 21%;
+    left: 26%;
+}
+.container .box .text-info
+{
+    position: absolute;
+    top: 100%;
+    height: 10px;
+    text-align: center;
+    color: antiquewhite;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .75s;
+    opacity: 0;
+}
+.container .box:hover .text-info
+{
+    top: 0;
+    opacity: 1;
+}
+.container .box .text-info h3
+{
+    margin: 0;
+    padding: 0;
+    color: pink;
+    font-size:  24px;
+}
