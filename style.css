@@ -137,3 +137,32 @@ header
     background-position: center;
     position: relative;
 }
+.navbar
+{
+    float: right;
+    list-style: none;
+    margin-top: -210px;
+}
+.navbar li
+{
+    display: inline-block;
+}
+.navbar li a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-family: 'Patua One', cursive;
+    font-size: 25px;
+}
+.navbar li a:hover
+{
+    background: whitesmoke;
+    color: #333;
+}
+.logo img
+{
+    width: 100px;
+    float: left;
+    height: auto;
+}
