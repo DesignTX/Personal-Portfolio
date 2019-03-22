@@ -213,6 +213,11 @@ header
     border-radius: 50%;
 }
 
+.aboutme {
+    height: 100vh;
+    background: gray;
+}
+
 .container .box .corgi img
 {
     position: absolute;
@@ -244,4 +249,78 @@ header
     padding: 0;
     color: pink;
     font-size:  24px;
+}
+.testcontainer {
+    /* display: flex; */
+}
+
+.tabs
+{
+    position: aboslute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: #ccc; */
+    margin: 0;
+    padding: 0;
+}
+.mainframe 
+{
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    background: dodgerblue;
+}
+
+.tabs .tabception
+{
+    list-style: none;
+    position: relative;
+    width: 10vw;
+    height: 100vh;
+    /* border-left: 1px solid #000; */
+    float: right;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+}
+.tabs .tabception:nth-child(1)
+{
+    background: url(astronomy-backlit-constellation-1421903.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.tabs .tabception:nth-child(2)
+{
+    background: url(astronomy-beautiful-clouds-355465.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.tabs .tabception:hover
+{
+    width: 60%;
+}
+.tabs:hover li
+{
+    width: 10%;
+}
+.tabs .tabception .contactme
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,8);
+    box-sizing: border-box;
+    color: #fff;
+    opacity: 0;
+}
+.tabs .tabception:hover .contactme
+{
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    opacity: 1;
 }
