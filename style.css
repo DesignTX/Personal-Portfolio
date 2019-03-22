@@ -483,6 +483,13 @@ html
 {
     width:  100%;
     padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom:  30px;
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent
 }
 .formcontainer .textbox 
 {
@@ -492,4 +499,60 @@ html
 {
     width: 100%;
     padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.formcontainer .textbox label
+{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.formcontainer .textbox textarea:focus ~ label,
+.formcontainer .textbox textarea:valid ~ label
+{
+    top: -30px;
+    left: 0;
+    color: dodgerblue;
+    font-size: 15px;
+}
+.formcontainer .inputboxes label
+{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.formcontainer .inputboxes input:focus ~ label,
+.formcontainer .inputboxes input:valid ~ label
+{
+    top: -30px;
+    left: 0;
+    color: dodgerblue;
+    font-size: 15px;
+}
+.formcontainer input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: dodgerblue;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
