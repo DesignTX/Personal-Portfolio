@@ -3,9 +3,13 @@
     margin: 0;
     padding: 0;
 }
-
+body
+{
+    overflow: hidden;
+}
 /* LANDING PAGE
 ==================================================== */
+
 section
 {
     height: 100vh;
@@ -51,7 +55,7 @@ h1
     color: #ddd;
     font-size: 5em;
     font-family: 'Yellowtail', cursive;
-    letter-spacing: 0.02em;
+    /* letter-spacing: 0.01em; */
     z-index: 3;
 }
 h1 span
@@ -106,7 +110,7 @@ h1 span
 
 
 
-h1 span:nth-child(1)
+/* h1 span:nth-child(1)
 {
     animation-delay: 1.5s;
 }
@@ -133,7 +137,7 @@ h1 span:nth-child(6)
 h1 span:nth-child(7)
 {
     animation-delay: 3.25s;
-}
+} */
 /* ==================================================== */
 
 /* NAV BAR
@@ -181,19 +185,19 @@ header
 }
 .navbar li:nth-child(1) 
 {
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 .navbar li:nth-child(2)
 {
-    animation-delay: 4.1s;
+    animation-delay: 6.1s;
 }
 .navbar li:nth-child(3)
 {
-    animation-delay: 4.2s;
+    animation-delay: 6.2s;
 }
 .navbar li:nth-child(4)
 {
-    animation-delay: 4.3s;
+    animation-delay: 6.3s;
 }
 
 .social
@@ -379,12 +383,7 @@ header
     background-size: cover;
     background-position: left;
 }
-.tabs .tabception
-{
-    background-color: red;
-    background-size: cover;
-    background-position: left;
-}
+
 .tabs .tabception:hover
 {
     width: 60%;
@@ -412,6 +411,10 @@ header
     transition: 0.5s;
     transition-delay: 0.5s;
     opacity: 1;
+    /* background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px */
+    background: none;
 }
 .tabs .tabception .portfolio
 {
@@ -450,4 +453,43 @@ header
 html
 {
     scroll-behavior: smooth;
+}
+
+.formcontainer
+{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 40px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.formcontainer h2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: whitesmoke;
+    text-align: center;
+}
+.formcontainer .inputboxes
+{
+    position: relative;
+}
+.formcontainer .inputboxes input
+{
+    width:  100%;
+    padding: 10px 0;
+}
+.formcontainer .textbox 
+{
+    position: relative;
+}
+.formcontainer .textbox textarea
+{
+    width: 100%;
+    padding: 10px 0;
 }

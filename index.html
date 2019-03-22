@@ -89,18 +89,33 @@
                     <li class="tabception">
                         <h2 class="contact-heading">Contact</h2>
                         <div class="contactme">
-                            <h2>Contact</h2>
-                            <form action="https://formspree.io/design.txu@gmail.com" method="POST">
-                                <input type="text" name="name">
-                                <input type="email" name="_replyto">
-                                <input type="submit" value="Send">
-                            </form>
+                            <!-- <h2>Contact</h2> -->
+                            <div class="formcontainer">
+                                <h2>Contact</h2>
+                                <form action="https://formspree.io/design.txu@gmail.com" method="POST">
+                                    <div class="inputboxes">
+                                        <input type="text" name="name" required>
+                                        <label>Your Name</label>
+                                    </div>
+                                    <div class="inputboxes">
+                                        <input type="email" name="_replyto" required>
+                                        <label>Your Email</label>
+                                    </div>
+                                    <div class="textbox">
+                                        <textarea name="message" id="txt" cols="30" rows="10" required></textarea>
+                                        <label>Message</label>
+                                    </div>
+                                    <div class="inputboxes">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </form>
+                            </div> 
                         </div>   
                     </li>
                     <li class="tabception">
                             <div class="portfolio" id="portfolio">
                                 <h2>Portfolio</h2>
-                                
+
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p>
                             </div>   
                         </li>
