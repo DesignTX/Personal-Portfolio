@@ -57,6 +57,12 @@ video
         display: none;
     }
 }
+
+@media screen and (max-width: 476px) 
+{
+    
+}
+
 /* .page-one video
 {
     position: absolute;
@@ -353,11 +359,11 @@ ul li:nth-child(4)
     margin: 10px;
     animation: fadeopacity 1s linear forwards;
 } */
-/* .navbar li a:hover
+.navbar li a:hover
 {
     background: whitesmoke;
     color: #333;
-} */
+}
 .logo img
 {
     width: 100px;
