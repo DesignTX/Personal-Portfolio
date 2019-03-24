@@ -1,3 +1,34 @@
+/* ###########################################################################
+###########################################################################
+###########################################################################
+
+COMPLETE CCS INDEX (items with '#' code is for you to command + f to search for a particular section)
+- items listed below are top down, left to right
+
+---------------
+PAGE 1
+---------------
+
+Navigation Bar - #NBAR
+My Name - #TXU
+Social Media Icons - #SOI
+Arrow down on page 1 - #FIPA
+
+---------------
+PAGE 2
+---------------
+Second Page Arrow - #SEPA
+Corgi Icons - #CICO
+Pull out tabs on the second page - #PTB
+Form Container - FC
+
+---------------------------------------------
+Keyframes & Media Queries
+---------------------------------------------
+Keyframes - #KFALL
+Media Queries - #MQ */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +41,6 @@ body {
     align-items: center;
     height: 100vh; */
 }
-/* LANDING PAGE
-==================================================== */
-
 .navigation,
 .burger-check {
   display: none;
@@ -25,10 +53,6 @@ body {
 section {
   height: 100vh;
   background: red;
-  /* animation-name: splash;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 4s; */
   z-index: 2;
 }
 section:before {
@@ -43,6 +67,7 @@ section:before {
   mix-blend-mode: color;
   pointer-events: none;
 }
+
 video {
   /* width: 100%;
     height: auto; */
@@ -50,21 +75,9 @@ video {
   width: 1276px;
 }
 
-/* .page-one video
-{
-    position: absolute;
-    object-fit: cover;
-    display: block;
-    height: 100vh;
-    width: 100vw;
-    left: 0;
-    top: 0;
-    z-index: 3;
-} */
-
-@media screen and (max-width: 600px) {
-}
-
+/* ###########################################################################
+MY NAME #TXU
+########################################################################### */
 h1 {
   margin: 0;
   padding: 0;
@@ -82,40 +95,6 @@ h1 span {
   opacity: 0;
   display: inline-block;
   animation: animate 1s linear forwards;
-}
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: rotateY(90deg);
-    filter: blur(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateY(0deg);
-    filter: blur(0px);
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    filter: blur(10px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0px);
-  }
-}
-
-@keyframes fadeopacity {
-  0% {
-    opacity: 0;
-    filter: blur(10px);
-  }
-  100% {
-    opacity: 0.7;
-    filter: blur(0px);
-  }
 }
 
 h1 span:nth-child(1) {
@@ -139,15 +118,10 @@ h1 span:nth-child(6) {
 h1 span:nth-child(7) {
   animation-delay: 4s;
 }
-/* ==================================================== */
 
-/* NAV BAR
-=========================================================== */
-/* .wrapper
-{
-    width: 1170px;
-    height: 100vh;
-} */
+/* ########################################################################### 
+NAVIGATION BAR #NBAR
+###########################################################################  */
 .navbar {
   position: absolute;
   opacity: 1;
@@ -166,7 +140,6 @@ h1 span:nth-child(7) {
   color: whitesmoke;
   text-decoration: none;
   display: inline-block;
-  /* animation: fadein 1s linear forwards; */
 }
 
 .navbar li {
@@ -175,13 +148,12 @@ h1 span:nth-child(7) {
   text-decoration: none;
   padding: 20px 20px;
   font-family: "Lato", sans-serif;
-  /* font-family: 'Patua One', cursive; */
   font-size: 18px;
   opacity: 0;
   display: inline-block;
   animation: fadein 1s linear forwards;
 }
-/* ul li:nth-child(1) {
+ul li:nth-child(1) {
   animation-delay: 6.3s;
 }
 ul li:nth-child(2) {
@@ -192,8 +164,15 @@ ul li:nth-child(3) {
 }
 ul li:nth-child(4) {
   animation-delay: 6.6s;
-} */
+}
+.navbar li a:hover {
+    background: whitesmoke;
+    color: #333;
+}
 
+/* ########################################################################### 
+SOCIAL ICONS #SOI
+###########################################################################  */
 .social {
   position: absolute;
   top: 60%;
@@ -251,21 +230,6 @@ ul li:nth-child(4) {
   animation: socialanimation 0.7s 1;
   top: -10%;
   left: -10%;
-
-}
-@keyframes socialanimation {
-  0% {
-    left: -110%;
-    top: 90%;
-  }
-  50% {
-    left: 10% 20%;
-    top: -30% 35%;
-  }
-  100% {
-    top: -10%;
-    left: -10%;
-  }
 }
 
 .social i:nth-child(1) {
@@ -279,23 +243,14 @@ ul li:nth-child(4) {
   animation-delay: 4.3s;
 }
 
-/* .social a img
-{
-    height: 40px;
-    width: 40px;
-    filter: alpha(opacity=50);
-    margin: 10px;
-    animation: fadeopacity 1s linear forwards;
-} */
-.navbar li a:hover {
-  background: whitesmoke;
-  color: #333;
-}
 .logo img {
   width: 100px;
   float: left;
   height: auto;
 }
+/* ########################################################################### 
+PAGE 1 ARROW #FIPA
+###########################################################################  */
 .arrow {
   position: relative;
   top: -2%;
@@ -350,42 +305,16 @@ ul li:nth-child(4) {
   animation-delay: 6.8s;
 }
 
-@keyframes arrow {
-  0% {
-    opacity: 1;
-    border-color: #fff;
-  }
-  20% {
-    opacity: 1;
-    border-color: #fff;
-  }
-  30%,
-  100% {
-    opacity: 1;
-    border-color: #222;
-  }
-}
-@keyframes delay {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-#delay {
-  animation-duration: 5s;
-}
-/* =========================================================== */
-
-/* BUTTONS ABOUT ME
-=========================================================== */
+/* ########################################################################### 
+CORGI ICONS ABOUT ME #CICO
+###########################################################################  */
 .container {
   /* border: white 2px solid; */
   height: 80%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
   position: relative;
   top: 5%;
   width: 80%;
@@ -394,9 +323,8 @@ ul li:nth-child(4) {
 }
 .container .box {
   position: relative;
-  width: 200px;
-  height: 200px;
-  /* background: midnightblue; */
+  width: 250px;
+  height: 250px;
   /* margin: 5%; */
   box-sizing: border-box;
   overflow: hidden;
@@ -408,7 +336,7 @@ ul li:nth-child(4) {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: black; */
+  /* background: white; */
   transition: 0.5s;
   /* z-index: 1; */
 }
@@ -448,6 +376,7 @@ ul li:nth-child(4) {
   opacity: 1;
 }
 .container .box .text-info h3 {
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   color: dodgerblue;
@@ -456,17 +385,11 @@ ul li:nth-child(4) {
 .testcontainer {
   /* display: flex; */
 }
-
-.tabs {
-  position: aboslute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  /* background: #ccc; */
-  margin: 0;
-  padding: 0;
+.container .box .text-info p {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
 }
+
 .mainframe {
   position: absolute;
   height: 100vh;
@@ -475,6 +398,9 @@ ul li:nth-child(4) {
   background-size: cover;
   /* z-index: 4; */
 }
+/* ########################################################################### 
+SECOND PAGE ARROW #SEPA
+###########################################################################  */
 .secondarrow {
   position: relative;
   top: 10%;
@@ -527,6 +453,21 @@ ul li:nth-child(4) {
   /* justify-content: space-around; */
 }
 
+/* ###########################################################################
+TABS #PTB
+########################################################################### */
+.tabs {
+    position: aboslute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: #ccc; */
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+
 .tabs .tabception {
   /* padding-top: 110px; */
   list-style: none;
@@ -540,12 +481,14 @@ ul li:nth-child(4) {
   transition: 0.5s;
   text-align: center;
   overflow: hidden;
+  z-index: 3;;
 }
 
 .tabs .tabception {
   background: url(astronomy-backlit-constellation-1421903.jpg);
   background-size: cover;
   background-position: left;
+  z-index: 3;
 }
 
 .tabs .tabception:hover {
@@ -621,6 +564,9 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ########################################################################### */
+FORM CONTAINER #FC
+/* ########################################################################### */
 .formcontainer {
   position: absolute;
   top: 50%;
@@ -632,6 +578,7 @@ html {
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  z-index: 3;
 }
 .formcontainer h2 {
   margin: 0 0 30px;
@@ -715,8 +662,73 @@ html {
   cursor: pointer;
   border-radius: 5px;
 }
-
-/*  MEDIA QUERIES */
+/* ###########################################################################
+KEYFRAMES #KFALL
+########################################################################### */
+@keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0px);
+    }
+  }
+@keyframes arrow {
+    0% {
+      opacity: 1;
+      border-color: #fff;
+    }
+    20% {
+      opacity: 1;
+      border-color: #fff;
+    }
+    30%,
+    100% {
+      opacity: 1;
+      border-color: #222;
+    }
+}
+@keyframes socialanimation {
+    0% {
+      left: -110%;
+      top: 90%;
+    }
+    50% {
+      left: 10% 20%;
+      top: -30% 35%;
+    }
+    100% {
+      top: -10%;
+      left: -10%;
+    }
+}
+@keyframes fadeopacity {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 0.7;
+      filter: blur(0px);
+    }
+}
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+}
+/* ########################################################################### */
+ /* MEDIA QUERIES  #MQALL */
+ /* ########################################################################### */
 
 @media screen and (max-width: 1280px) {
   div.videobox {
@@ -734,9 +746,41 @@ html {
 
 }
 
+@media (max-width: 1172px) {
+    .container .box .text-info p {
+        font-family: "Lato", sans-serif;
+        font-size: 10px;
+    }
+    .container .box {
+        width: 150px;
+        height: 150px;
+    }
+    .container .box .corgi {
+        width: 150px;
+        height: 150px;
+    }
+}
+
 @media (max-width: 1024px) {
 }
 
+@media (max-width:938px){
+    .container .box .text-info p {
+        font-family: "Lato", sans-serif;
+        font-size: 10px;
+    }
+    .container .box {
+        width: 150px;
+        height: 150px;
+    }
+    .container .box .corgi {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 782px){
+    .container .box
+}
 @media (max-width: 768px) {
   h1 {
     font-size: 3em;
@@ -751,6 +795,27 @@ html {
   @media (max-width: 487px) {
     h1 {
       font-size: 2.5em;
+    }
+    @media (max-width: 470px) {
+        .container .box .corgi:hover img {
+            width: 0;
+            height: 0;
+        }
+        .container .box .text-info h3 {
+            font-size: 5px;
+        }
+        .container .box .text-info p {
+            font-family: "Lato", sans-serif;
+            font-size: 7px;
+        }
+        .container .box {
+            width: 75px;
+            height: 75px;
+        }
+        .container .box .corgi {
+            width: 75px;
+            height: 75px;
+        }
     }
 
     .navbar li{
