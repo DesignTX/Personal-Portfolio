@@ -281,28 +281,28 @@ PAGE 1 ARROW #FIPA
 .arrow span:nth-child(1) {
   top: -30px;
   left: -30px;
-  animation-delay: 6s;
+  animation-delay: 8s;
 }
 .arrow span:nth-child(2) {
   top: -15px;
   left: -15px;
-  animation-delay: 6.2s;
+  animation-delay: 8.2s;
 }
 .arrow span:nth-child(3) {
   top: 0px;
   left: 0px;
-  animation-delay: 6.4s;
+  animation-delay: 8.4s;
 }
 .arrow span:nth-child(4) {
   top: 15px;
   left: 15px;
-  animation-delay: 6.6s;
+  animation-delay: 8.6s;
 }
 
 .arrow span:nth-child(5) {
   top: 30px;
   left: 30px;
-  animation-delay: 6.8s;
+  animation-delay: 8.8s;
 }
 
 /* ########################################################################### 
@@ -508,6 +508,7 @@ TABS #PTB
   box-sizing: border-box;
   color: #fff;
   opacity: 1;
+  z-index: 3;
 }
 .tabs .tabception:hover .contactme {
   height: 100%;
@@ -516,10 +517,9 @@ TABS #PTB
   transition: 0.5s;
   transition-delay: 0.5s;
   opacity: 1;
-  /* background: rgba(0, 0, 0, .8);
-    box-sizing: border-box;
-    box-shadow: 0 15px */
-  background: none;
+  background: rgba(0, 0, 0, .8);
+  box-sizing: border-box;
+  box-shadow: 0 15px
 }
 .tabs .tabception .portfolio {
   position: absolute;
