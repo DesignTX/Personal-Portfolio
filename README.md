@@ -1,6 +1,6 @@
 # Tony Xu'sPersonal-Portfolio
 
-[Link here - https://lucid-yalow-046b78.netlify.com/](https://lucid-yalow-046b78.netlify.com/)
+[Link here - https://confident-northcutt-5be2ee.netlify.com](https://confident-northcutt-5be2ee.netlify.com)
 
 [Tonys Portfolio GitHub Repo](https://github.com/DesignTX/Personal-Portfolio)
 
